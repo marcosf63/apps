@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+  <h1>{{ username }} falou: </h1>
+  <p>
+    {{ message }} 
+  </p>
+   
+  <a href="{{ url_for('home') }}">Diga outra coisa</a>
+{% endblock %}

@@ -1,0 +1,47 @@
+<!DOCTYPE html lang="pt-br">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+         <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        
+        <title>Calcula Distancias</title>
+    </head>
+    <body>
+      <div class="container">
+       <h1>Distância entre cidades!</h1>
+        <form role="form">
+          <div class="form-group">
+            <label for="origem">Cidade de Origem</label>
+            <input type="text" class="form-control" id="origem" placeholder="Digite a cidade de origem. Ex.: Sobral-CE">
+          </div>
+          <div class="form-group">
+            <label for="destino">Cidade de Destino</label>
+            <input type="text" class="form-control" id="destino" placeholder="Digite a cidade de destino. Ex.: Fortaleza-CE">
+          </div>          
+          <button type="button" class="btn btn-primary" id="calcular">Calcular</button>
+        </form>
+        </br>
+       <div id="resultado"></div>
+      </div>        
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+       <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+       <script src="https://code.jquery.com/jquery.js"></script>
+       <!-- API do google maps -->
+       <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBVtQszTaL5RKse1YUg6k5gjBoEnDMgmFs&sensor=false"></script>
+       <!-- Include all compiled plugins (below), or include individual files as needed -->
+       <script src="js/bootstrap.min.js"></script>
+       <!-- script da aplicação-->
+      <script src="js/distancia.js"></script>
+    </body>
+</html>
