@@ -1,10 +1,13 @@
 import httplib
 
-def ler_html():
+def ler_html(loc):
   conn = httplib.HTTPConnection('aluno.uvanet.br')
-  conn.request("GET", "/acesso.php")
+  loc = "/" + loc
+  #print type(loc)
+  conn.request("GET/", loc)
   r = conn.getresponse()
-  print dir(r)
+  headers =  dict(r.getheaders())
+  print headers
   
 if __name__ == '__main__':
-  ler_html()
+  ler_html('index.php')
